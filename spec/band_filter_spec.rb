@@ -2,6 +2,12 @@ require 'band_filter'
 
 RSpec.describe do
     it "responds with an array" do
-        expect(band_filter).to be_an_instance_of(Array)
+        soundwave = band_filter([90,90,90,100,100])
+        expect(soundwave).to be_an_instance_of(Array)
+    end
+
+    it "when passed frequency, returns same frequency" do
+       soundwave = band_filter([90,90,90,100,100])
+       expect(soundwave).to eq([90,90,90,100,100])
     end
 end

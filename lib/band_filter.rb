@@ -1,3 +1,3 @@
-def band_filter
-    []
+def band_filter(frequency)
+    frequency
 end
